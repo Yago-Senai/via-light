@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Light</title>
+    <link rel="stylesheet" href="stylecadprodutos.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/melonLogo.png">
+</head>
+
+<body>
+    <header>
+        <div class="containerLT">
+            <img src="">
+            <h1 style="color: var(--verde);">Via <span style="color: #3885ab;">Light</span></h1>
+        </div>
+        <button id="botaoHeader">
+            Login
+        </button>
+    </header>
+
+    <main>
+        <form action="conexaocadprodutos.php" method="post" onsubmit="return validarForm()">
+            <h2>Cadastro de Produtos</h2>
+            <label for="txtcodproduto">COD_produto</label>
+            <input type="number" name="codproduto" id="txtcodproduto" required>
+
+            <label for="txtnome">Nome</label>
+            <input type="text" name="nome" id="txtnome" required>
+
+            <label for="txtfabricante">Fabricante</label>
+            <input type="text" name="fabricante" id="txtfabricante" required>
+
+            <label for="data_validade">Data de Validade</label>
+            <input type="date" name="data_validade" id="txtdatavalidade" required>
+
+            <label for="txtpreco_venda">Preço em Venda</label>
+            <input type="text" name="preco_venda" id="txtpreco_venda" required>
+
+            <label for="txtpreco_atacado">Preço a Atacado</label>
+            <input type="text" name="preco_atacado" id="txtpreco_atacado" required>
+
+            <button type="submit" name="acao" value="cadastrar">Cadastrar</button>
+            <button type="submit" name="acao" value="atualizar">Atualizar</button>
+            <button type="submit" name="acao" value="excluir"
+                onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</button>
+        </form>
+    </main>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footerTexto">
+
+        </div>
+        <div class="footerTexto">
+
+        </div>
+        <div class="footerTexto">
+
+        </div>
+    </footer>
+    <script src="scriptcadprodutos.js">
+    </script>
+</body>
+
+</html>

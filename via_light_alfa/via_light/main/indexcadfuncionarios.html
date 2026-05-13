@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Light</title>
+    <link rel="stylesheet" href="stylecadfuncionarios.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/melonLogo.png">
+</head>
+<body>
+    <header> 
+        <div class="containerLT">
+            <img src="">
+            <h1 style="color: var(--verde);">Via <span style="color: #3885ab;">Light</span></h1>
+        </div>
+        <button  id="botaoHeader">
+            Login
+        </button>
+    </header>
+    
+    <main>
+            <form action="conexaocadfuncionarios.php" method="post" onsubmit="return validarForm()">
+                <h2>Cadastro de Funcionários</h2>
+                <label for="txtidfuncionario">Id Funcionário</label>
+                <input type="number" name="idfuncionario" id="txtidfuncionario" required>
+
+                <label for="txtnome">Nome</label>
+                <input type="text" name="nome" id="txtnome" required>
+
+                  <label for="txtemail">Email</label>
+                <input type="email" name="email" id="txtemail" required>
+
+                <label for="txttelefone">Telefone</label>
+                <input type="number" name="telefone" id="txttelefone" required>
+
+
+                <label for="txtturno">Turno</label>
+                <input type="text" name="turno" id="txtturno" required>
+
+                <label for="txtdtcargo">Cargo</label>
+                <input type="text" name="dtcargo" id="txtdtcargo" required>
+                
+                <label for="txtsetor">Setor</label>
+                <input type="text" name="setor" id="txtsetor" required>
+
+                <label for="txtendereco">Endereco</label>
+                <input type="text" name="endereco" id="txtendereco" required>
+
+                <label for="txtdtnascimento">Data de Nascimento</label>
+                <input type="date" name="dtnascimento" id="txtdtnascimento" required>
+
+              
+
+
+                 <button type="submit" name="acao" value="cadastrar">Cadastrar</button>
+    <button type="submit" name="acao" value="atualizar">Atualizar</button>
+    <button type="submit" name="acao" value="excluir" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</button>
+
+            </form>
+        </main>
+    </div>
+<!-- FOOTER -->
+    <footer>
+        <div class="footerTexto">
+            
+        </div>  
+        <div class="footerTexto">
+            
+        </div>  
+        <div class="footerTexto">
+            
+        </div>  
+    </footer>
+<script src="scriptcadfuncionarios.js">
+</script>
+</body>
+</html>
