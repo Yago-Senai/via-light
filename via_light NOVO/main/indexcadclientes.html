@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Light</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="assets/images/melonLogo.png">
+</head>
+<body>
+    <header> 
+		<div class="containerLT">
+			<a href="index.html"><h1 style="color: var(--text1);">Via <span style="color: #3885ab;">Light</span></h1></a>
+		</div>
+		<a href="login.html">
+			<button  id="botaoHeader">
+				Login
+			</button>
+		</a>
+	</header>
+    <div id="interface">
+		<form action="conexaocadclientes.php" method="post" onsubmit="return validarForm()">
+			<h1>Cadastro de clientes</h1>
+			<label for="txtcpf">CPF</label>
+			<input type="text" name="cpf" id="txtcpf" required>
+			<label for="txtnome">Nome</label>
+			<input type="text" name="nome" id="txtnome" required>
+			<label for="txtdtnascimento">Data de Nascimento</label>
+			<input type="date" name="dtnascimento" id="txtdtnascimento" required>
+			<label for="txtemail">Email</label>
+			<input type="email" name="email" id="txtemail" required>
+			<label for="txttelefone">Telefone</label>
+			<input type="number" name="telefone" id="txttelefone" required>
+			<label for="txtendereco">Endereço</label>
+			<input type="text" name="endereco" id="txtendereco" required>
+			<label for="txtdtcadastro">Data de Cadastro</label>
+			<input type="date" name="dtcadastro" id="txtdtcadastro" required>
+			<button type="submit" name="acao" value="cadastrar">Cadastrar</button>
+			<button type="submit" name="acao" value="atualizar">Atualizar</button>
+			<button type="submit" name="acao" value="excluir" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</button>
+		</form>
+    </div>  
+<!-- FOOTER -->
+    <footer>
+		<div class="footerTexto">
+			<h1>Desenvolvedores</h1>
+			<a href="https://github.com/Yago-Senai"><p>Yago Mamud</p></a>
+			<a href="https://github.com/JoaoFelipeDaCosta"><p>João Felipe</p></a>
+			<a href="https://github.com/lucassertorio"><p>Lucas Sertório</p></a>
+			<a href="https://github.com/xavierjunior9-bit"><p>Alexandre</p></a>
+		</div>	
+		<div class="footerTexto">
+			<h1>Colaboradores</h1>
+			<a href="https://www.flaticon.com/"><p>Flaticon</p></a>
+		</div>	
+		<div class="footerTexto">
+			<h1>Informações</h1>
+			<a href="licensa.html"><p>Licensa</p></a>
+			<a href="https://github.com/Yago-Senai/via-light"><p>Projeto</p></a>
+			<a href="credits.html"><p>Créditos</p></a>
+		</div>	
+	</footer>
+<script src="scriptcadclientes.js">
+</script>
+</body>
+</html>
