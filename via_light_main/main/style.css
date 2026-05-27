@@ -55,6 +55,10 @@
 	body {
 		background-color: var(--backgroundMain);
 	}
+	.tituloCategoria {
+		font-size: 3rem;
+		margin: 0;
+	}
 /* BOTÕES */
 	button {
 		color: var(--detail);
@@ -315,7 +319,7 @@
 	/* container cardlings */
 	.containerCardlings {
 		width: 100%;
-		height: 25rem;
+		min-height: 20rem;
 		padding: 0 1rem 2.5rem 1rem;
 		display: flex;
 		flex-direction: row;
@@ -344,9 +348,6 @@
 	.ling p, .big p {
 		font-size: 2rem;
 		color: var(--text3);
-	}
-	.ling figure {
-		width: 100%;
 	}
 	.ling figure img {
 		width: 100%;
@@ -394,4 +395,15 @@
 		box-shadow: 0px 0px 8px #000;
 		margin-top: 2rem;
 	}
-	
+
+/* BANNER CARROSSEL */
+	.bannerCRS, .bannerCRS img {
+		width: 100%;
+		max-height: 50rem;
+	}
+	.imagemCRS {
+		display: none;
+	}
+	.visivel {
+		display: block;
+	}
